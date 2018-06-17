@@ -37,7 +37,11 @@ const Header = () => (
 
 const Footer = () => (
   <footer>
-    <small className="o-flex o-flex--center"><a href="" className="c-icon-link"><Github /></a></small>
+    <small className="o-flex o-flex--center">
+      <a href="https://github.com/makotot/design-system-bookmarks" className="c-icon-link">
+        <Github />
+      </a>
+    </small>
   </footer>
 )
 
