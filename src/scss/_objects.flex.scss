@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+.o-flex {
+  display: flex;
+
+  &--center {
+    align-items: center;
+    justify-content: center;
+  }
+}

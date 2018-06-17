@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+.o-section {
+
+  & + & {
+    margin: 48px 0 0;
+  }
+}

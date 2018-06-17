@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+.o-wrapper {
+  padding: 48px 0 16px;
+  max-width: 90vw;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: 80vw;
+  }
+}
