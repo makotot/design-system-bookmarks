@@ -6,13 +6,13 @@ env:
   global:
     - secure: qDY80Wbax5nvaGftFjeVPkDM4Lk7RY27Fsjhr8X79gH6pvMTFGiRkJCzjIR6KmKrt/V7ejM1EVxjEkFNc/7HvIa9Vx4dBCTiPAqvci+N5pf0wYC/DT3Igh6De4iBuOcjYiTY/r96Z2prvc17TXrtg2vounr9QjbPC5D+QrsAV0+fxvLh96s0Z7uDEKXgJQfUYB0U5Do88iwktPTUkffrjdYjmGzC/jgWoe8hGx6GYuA4Va4pfRHdaiYkOjJ7IU3h6x/Ui1CzWpY+wq5K3cnJeiVFG3Ll09LibE5ztw/VgUumt8SJDrLJmQOMJz/Hymh3CJbv0WtakcBvOHaDpP6sXHWNCkilSzP50h+CpJcaMvnMlkuOknAn0+sOOUh2FGhlEHLzQtwr6D3DASvz9G6BgMJ/38X0s/+x17oWBs6Pm4P4RkeIExTv74Qde7av7wcdCtA8ZtqjsERXUYYXGvKsEB1wI/bCylUYDe7wHv80R920lIbwzIZdKCa/f86ALJAK3v1d5WnQp2cZTTiaUuo1OgsduDN0+sDn/ej+77FVnW2dYohP8E5BsJc/jbtLBqzZxucDpdwQapDBiu4/I3MzyWpr2n+8aZvc3fjml/p2hMHB6pp9V/CK9IvjnhuyapiIGpqmBUlKyPByHujHTKZ0Kev4GDWDBRaAF7BuaZNXQBo=
 
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  keep-history: true
-  on:
-    branch: master
+# deploy:
+#   provider: pages
+#   skip-cleanup: true
+#   github-token: $GITHUB_TOKEN
+#   keep-history: true
+#   on:
+#     branch: master
 
 script:
   - npm run build
