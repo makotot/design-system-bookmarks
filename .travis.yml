@@ -15,4 +15,11 @@ deploy:
     branch: master
 
 script:
+  - npm run build
+
+after_success:
+  - git config --global user.name "makotot"
+  - git config --global user.email "makotot@gmail.com"
+  - git remote rm origin
+  - git remote add origin https://makotot:${GH_TOKEN}@github.com/makotot/design-system-bookmarks.git
   - npm run deploy
