@@ -61,9 +61,18 @@ module.exports = (env, options) => {
             },
             {
               loader: 'css-loader',
+              options: {
+                minimize: process.env.WEBPACK_SERVE ? false : true,
+              },
             },
             {
               loader: 'postcss-loader',
+              options: {
+                plugins: () => [
+                  require('postcss-flexbugs-fixes'),
+                  require('autoprefixer'),
+                ],
+              },
             },
             {
               loader: 'sass-loader',
