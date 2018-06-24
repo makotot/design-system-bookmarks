@@ -2,7 +2,14 @@
   "scripts": {
     "dev": "webpack-serve --config ./webpack.config.js",
     "build": "webpack --config ./webpack.config.js",
-    "deploy": "gh-pages -d ./dist"
+    "deploy": "gh-pages -d ./dist",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "prettier --no-semi --single-quote --write",
+      "git add"
+    ]
   },
   "devDependencies": {
     "@mdx-js/loader": "^0.11.0",
@@ -18,11 +25,14 @@
     "gh-pages": "^1.2.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.0",
     "markdown-loader": "^3.0.0",
     "marked": "^0.4.0",
     "node-sass": "^4.9.0",
     "postcss-flexbugs-fixes": "^3.3.1",
     "postcss-loader": "^2.1.5",
+    "prettier": "^1.13.5",
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
     "webpack": "^4.12.0",
