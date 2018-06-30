@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+@function map-deep-get($map, $keys...) {
+
+  @each $key in $keys {
+    @if not map-has-key($map, $key) {
+      @warn "#{ $key } is not found in #{ $map }.";
+
+      @return null;
+    }
+    $map: map-get($map, $key);
+  }
+
+  @return $map;
+}

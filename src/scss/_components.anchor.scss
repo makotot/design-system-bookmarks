@@ -1,10 +1,10 @@
 @charset "utf-8";
 
 .c-anchor {
-  color: #555;
+  color: map-deep-get($tokens, colors, ui, ternary);
   text-decoration: underline;
 
   &:hover {
-    color: #7431EF;
+    color: map-deep-get($tokens, colors, brand, primary);
   }
 }

@@ -13,69 +13,63 @@ import Others from '../docs/others.md'
 
 import '../scss/app.scss'
 
-const Wrapper = (props) => (
-  <div className="o-wrapper">{ props.children }</div>
-)
+const Wrapper = props => <div className="o-wrapper">{props.children}</div>
 
-const Grid = (props) => (
-  <div className="o-grid">{ props.children }</div>
-)
+const Grid = props => <div className="o-grid">{props.children}</div>
 
-const Heading = (props) => {
-  const Tag = `h${ props.level }`
+const Heading = props => {
+  const Tag = `h${props.level}`
 
   return (
-    <Tag className={ `c-heading c-heading--${ props.level }` }>{ props.children }</Tag>
+    <Tag className={`c-heading c-heading--${props.level}`}>
+      {props.children}
+    </Tag>
   )
 }
 
 const Header = () => (
   <header>
-    <Heading level={ 1 }>Design System <span className="c-heading__sub">bookmarks</span></Heading>
+    <Heading level={1}>
+      Design System <span className="c-heading__sub">bookmarks</span>
+    </Heading>
   </header>
 )
 
 const Footer = () => (
   <footer>
     <small className="o-flex o-flex--center">
-      <a href="https://github.com/makotot/design-system-bookmarks" className="c-icon-link" aria-label="Github repository link">
+      <a
+        href="https://github.com/makotot/design-system-bookmarks"
+        className="o-flex c-icon-link"
+        aria-label="Github repository link"
+      >
         <Github />
       </a>
     </small>
   </footer>
 )
 
-const Blockquote = (props) => (
-  <blockquote className="c-quote" { ...props } />
-)
+const Blockquote = props => <blockquote className="c-quote" {...props} />
 
-const A = (props) => (
-  <a className="c-anchor" { ...props } />
-)
+const A = props => <a className="c-anchor" {...props} />
 
-const List = (props) => (
-  <ul className="o-list" { ...props } />
-)
+const List = props => <ul className="o-list" {...props} />
 
-const ListItem = (props) => (
-  <li className="o-list-item" { ...props } />
-)
+const ListItem = props => <li className="o-list-item" {...props} />
 
-const Section = (props) => (
+const Section = props => (
   <div className="o-section">
-    <section>
-      { props.children }
-    </section>
+    <section>{props.children}</section>
   </div>
 )
 
 const components = {
-  h2: (props) => (<Heading level={2} {...props} />),
-  h3: (props) => (<Heading level={3} {...props} />),
+  h2: props => <Heading level={2} {...props} />,
+  h3: props => <Heading level={3} {...props} />,
   blockquote: Blockquote,
   a: A,
   ul: List,
-  li: ListItem,
+  li: ListItem
 }
 
 const App = () => (
@@ -84,31 +78,31 @@ const App = () => (
       <Header />
       <div>
         <Section>
-          <What components={ components } />
+          <What components={components} />
         </Section>
         <Section>
-          <DesignSystems components={ components } />
+          <DesignSystems components={components} />
         </Section>
         <Section>
-          <DesignTokens components={ components } />
+          <DesignTokens components={components} />
         </Section>
         <Section>
-          <Tools components={ components } />
+          <Tools components={components} />
         </Section>
         <Section>
-          <Articles components={ components } />
+          <Articles components={components} />
         </Section>
         <Section>
-          <Slides components={ components } />
+          <Slides components={components} />
         </Section>
         <Section>
-          <Communities components={ components } />
+          <Communities components={components} />
         </Section>
         <Section>
-          <Others components={ components } />
+          <Others components={components} />
         </Section>
         <Section>
-          <Resources components={ components } />
+          <Resources components={components} />
         </Section>
       </div>
       <Footer />

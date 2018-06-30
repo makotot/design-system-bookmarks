@@ -1,10 +1,10 @@
 @charset "utf-8";
 
 .c-quote {
-  color: #555;
+  color: map-deep-get($tokens, colors, ui, secondary);
   padding: 0 16px;
   margin: 0;
-  border-left: 8px solid #555;
+  border-left: 8px solid map-deep-get($tokens, colors, ui, secondary);
 
   p + p {
     margin: 16px 0;
