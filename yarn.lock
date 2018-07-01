@@ -2,15 +2,15 @@
 # yarn lockfile v1
 
 
-"@mdx-js/loader@^0.11.0":
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/@mdx-js/loader/-/loader-0.11.0.tgz#ad1197e2fcc67f31a91a4aa92c181b01b94b6605"
+"@mdx-js/loader@^0.12.0":
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/@mdx-js/loader/-/loader-0.12.0.tgz#194dc1248c603285d252fd1fa22e546e3abc26b0"
   dependencies:
     "@mdx-js/tag" "^0.11.0"
 
-"@mdx-js/mdx@^0.10.1":
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/@mdx-js/mdx/-/mdx-0.10.1.tgz#5c24679cf90fc80e16a8164de4fc9274a5657d78"
+"@mdx-js/mdx@^0.12.0":
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/@mdx-js/mdx/-/mdx-0.12.0.tgz#353d266974b7303dd3f154aad1b77a90f2534f1f"
   dependencies:
     "@mdx-js/mdxast" "^0.10.0"
     mdast-util-to-hast "^3.0.0"
@@ -460,15 +460,15 @@ autoprefixer@^6.3.1:
     postcss "^5.2.16"
     postcss-value-parser "^3.2.3"
 
-autoprefixer@^8.6.3:
-  version "8.6.3"
-  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-8.6.3.tgz#1d38a129e6a4582a565b6570d16f2d7d3de9cbf9"
+autoprefixer@^8.6.4:
+  version "8.6.4"
+  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-8.6.4.tgz#6bf501de426a3b95973f5d237dbcc9181e9904d2"
   dependencies:
     browserslist "^3.2.8"
-    caniuse-lite "^1.0.30000856"
+    caniuse-lite "^1.0.30000859"
     normalize-range "^0.1.2"
     num2fraction "^1.2.2"
-    postcss "^6.0.22"
+    postcss "^6.0.23"
     postcss-value-parser "^3.2.3"
 
 aws-sign2@~0.6.0:
@@ -1478,9 +1478,9 @@ caniuse-lite@^1.0.30000844:
   version "1.0.30000851"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000851.tgz#3b498aebf9f92cf6cff4ab54d13b557c0b590533"
 
-caniuse-lite@^1.0.30000856:
-  version "1.0.30000856"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000856.tgz#ecc16978135a6f219b138991eb62009d25ee8daa"
+caniuse-lite@^1.0.30000859:
+  version "1.0.30000861"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000861.tgz#a32bb9607c34e4639b497ff37de746fc8a160410"
 
 capture-stack-trace@^1.0.0:
   version "1.0.0"
@@ -2292,6 +2292,14 @@ end-of-stream@^1.0.0, end-of-stream@^1.1.0:
 enhanced-resolve@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-4.0.0.tgz#e34a6eaa790f62fccd71d93959f56b2b432db10a"
+  dependencies:
+    graceful-fs "^4.1.2"
+    memory-fs "^0.4.0"
+    tapable "^1.0.0"
+
+enhanced-resolve@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-4.1.0.tgz#41c7e0bfdfe74ac1ffe1e57ad6a5c6c9f3742a7f"
   dependencies:
     graceful-fs "^4.1.2"
     memory-fs "^0.4.0"
@@ -5204,7 +5212,7 @@ postcss@^6.0.0, postcss@^6.0.1:
     source-map "^0.6.1"
     supports-color "^5.4.0"
 
-postcss@^6.0.22:
+postcss@^6.0.23:
   version "6.0.23"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.23.tgz#61c82cc328ac60e677645f979054eb98bc0e3324"
   dependencies:
@@ -5220,9 +5228,9 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
-prettier@^1.13.5:
-  version "1.13.5"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.13.5.tgz#7ae2076998c8edce79d63834e9b7b09fead6bfd0"
+prettier@^1.13.7:
+  version "1.13.7"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.13.7.tgz#850f3b8af784a49a6ea2d2eaa7ed1428a34b7281"
 
 pretty-error@^2.0.2:
   version "2.1.1"
@@ -6814,9 +6822,9 @@ webpack-sources@^1.0.1, webpack-sources@^1.1.0:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
-webpack@^4.12.0:
-  version "4.12.0"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.12.0.tgz#14758e035ae69747f68dd0edf3c5a572a82bdee9"
+webpack@^4.14.0:
+  version "4.14.0"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.14.0.tgz#bbcc40dbf9a34129491b431574189d3802972243"
   dependencies:
     "@webassemblyjs/ast" "1.5.12"
     "@webassemblyjs/helper-module-context" "1.5.12"
@@ -6828,7 +6836,7 @@ webpack@^4.12.0:
     ajv "^6.1.0"
     ajv-keywords "^3.1.0"
     chrome-trace-event "^1.0.0"
-    enhanced-resolve "^4.0.0"
+    enhanced-resolve "^4.1.0"
     eslint-scope "^3.7.1"
     json-parse-better-errors "^1.0.2"
     loader-runner "^2.3.0"
