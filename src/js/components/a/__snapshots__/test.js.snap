@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`A renders collectly 1`] = `
+<a
+  className="c-anchor"
+  href="/"
+/>
+`;
