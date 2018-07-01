@@ -1,6 +1,6 @@
 # [Design System Bookmarks](https://makotot.github.io/design-system-bookmarks/)
 
-![Travis branch](https://img.shields.io/travis/makotot/design-system-bookmarks/master.svg?style=flat-square)
+[![Travis branch](https://img.shields.io/travis/makotot/design-system-bookmarks/master.svg?style=flat-square)](https://travis-ci.org/makotot/design-system-bookmarks)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 - [What is Design System?](./src/docs/what.md)
