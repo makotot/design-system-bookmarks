@@ -62,7 +62,6 @@ module.exports = (env, options) => {
             {
               loader: 'css-loader',
               options: {
-                minimize: process.env.WEBPACK_SERVE ? false : true,
               },
             },
             {
@@ -71,6 +70,7 @@ module.exports = (env, options) => {
                 plugins: () => [
                   require('postcss-flexbugs-fixes'),
                   require('autoprefixer'),
+                  require('cssnano'),
                 ],
               },
             },
